@@ -21,6 +21,65 @@ class WeatherScreen extends StatelessWidget {
           )
         ],
       ),
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          children: [
+            SizedBox(
+              width: double.infinity,
+              child: Card(
+                elevation: 10,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                
+                child: const Padding(
+                  padding: EdgeInsets.all(16),
+                  child: Column(
+                    children: [
+                      Text(
+                        "303°F",
+                        style: TextStyle(
+                          fontSize: 32,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 16,
+                      ),
+                      Icon(
+                        Icons.cloud,
+                        size: 64,
+                      ),
+                      const SizedBox(
+                        height: 16,
+                      ),
+                      Text(
+                        "Rain",
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            const Placeholder(
+              fallbackHeight: 150,
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            const Placeholder(
+              fallbackHeight: 150,
+            )
+          ],
+        ),
+      ),
     );
   }
 }
