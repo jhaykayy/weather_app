@@ -25,7 +25,7 @@ class HourlyForecastItem extends StatelessWidget {
           children: [
              Text(
               time,
-              style:  TextStyle(
+              style:  const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),
@@ -37,7 +37,7 @@ class HourlyForecastItem extends StatelessWidget {
               icon,
               size: 32,
             ),
-            SizedBox(
+            const SizedBox(
               height: 8,
             ),
             Text(
